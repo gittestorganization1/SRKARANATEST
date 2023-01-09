@@ -1,0 +1,23 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+
+
+parameters:
+- name: branchname
+  type: string
+  default: 'refs/heads/test'
+
+resources:
+  repositories:
+   - repository: Parameter1
+     type: git
+     name: Parameter1
+     ref: ${{parameters.branchname}}
+
+extends:
+  template: test.yml@Parameter1
+
+
