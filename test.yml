@@ -8,7 +8,7 @@
 parameters:
 - name: branchname
   type: string
-  default: 'refs/heads/test'
+  default: 'refs/heads/main'
 
 resources:
   repositories:
