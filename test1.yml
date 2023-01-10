@@ -3,7 +3,9 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-
+variables:
+ name: brname
+ value: refs/heads/main
 
 parameters:
 - name: branchname
@@ -15,7 +17,7 @@ resources:
    - repository: Parameter1
      type: git
      name: MercuryHealth\Parameter1
-     ref: ${{parameters.branchname}}
+     ref: ${{variables['variables.brname']}}
 
 extends:
   template: test.yml@Parameter1
