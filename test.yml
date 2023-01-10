@@ -18,6 +18,6 @@ resources:
      ref: ${{parameters.branchname}}
 
 extends:
-  template: test.yml@Parameter1
+  template: test1.yml@Parameter1
 
 
