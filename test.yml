@@ -17,7 +17,7 @@ resources:
      name: MercuryHealth\Parameter1
      ref: ${{parameters.branchname}}
 
-extends:
-  template: test1.yml@Parameter1
+#extends:
+#  template: test1.yml@Parameter1
 
 
