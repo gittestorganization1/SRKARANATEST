@@ -15,7 +15,7 @@ resources:
    - repository: Parameter1
      type: git
      name: MercuryHealth\Parameter1
-     ref: ${{parameters.branchname}}
+     #ref: refs/heads/main
 
 #extends:
 #  template: test1.yml@Parameter1
