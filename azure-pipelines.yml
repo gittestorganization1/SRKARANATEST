@@ -10,7 +10,8 @@ trigger:
  tags:
    include:
      - '*'
-
+pr:
+  dev
 pool:
   vmImage: ubuntu-latest
 
