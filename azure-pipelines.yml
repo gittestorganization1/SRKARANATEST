@@ -11,7 +11,9 @@ trigger:
    include:
      - '*'
 pr:
-  dev
+ branches:
+   include:
+    - dev
 pool:
   vmImage: ubuntu-latest
 
